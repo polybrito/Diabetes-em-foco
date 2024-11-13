@@ -1,0 +1,103 @@
+body {
+    background-color: #a6dfff;
+}
+
+
+/* Estiliza o header */
+header {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens */
+    align-items: center;
+    gap: 20px; 
+    flex-grow: 1; /* Permite que o menu ocupe o espaço central */
+    margin: 0;
+}
+
+/* Estiliza o logo */
+#logo {
+    margin-right: auto; /* Empurra o logo para a esquerda */
+}
+
+/* Estiliza o logo */
+#logo img {
+    width: 40px;
+}
+
+/* Estiliza o login */
+#login {
+    margin-left: auto; /* Empurra o login para a direita */
+}
+
+/* Estiliza o menu */
+.menu li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Estiliza o menu */
+.menu li a:hover {
+    color: #0056b3;
+}
+
+/* Estiliza o login */
+.login {
+    background-color: #ff9f68;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Estiliza o login */
+.login:hover {
+    background-color: #ff8c3a;
+}
+
+.logoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*sobre nós*/
+
+.sobre {
+    width: 80%;
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    justify-self: center;
+}
+
+.sobre th, td {
+    padding: 10px;
+    border: 0;
+}
+
+.sobre img {
+    max-width: 98%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.sobre p {
+    text-align: center;
+    margin: 20px;    
+}
