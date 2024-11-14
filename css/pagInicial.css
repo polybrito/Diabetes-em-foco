@@ -77,27 +77,59 @@ header {
 
 .sobre {
     width: 80%;
-    margin-top: 50px;
+    margin: 50px auto;
     border-collapse: collapse;
     border-radius: 20px;
     overflow: hidden;
     background-color: #ffffff;
-    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.sobre th, td {
+.sobre tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sobre td {
+    flex: 1;
     padding: 10px;
-    border: 0;
+    box-sizing: border-box;
 }
 
 .sobre img {
-    max-width: 98%;
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
-.sobre p {
-    text-align: center;
-    margin: 20px;    
+.sobre p, h2 {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;  
 }
+.sobre h2 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre td {
+        width: 100%;
+    }
+
+    .sobre img {
+        max-width: 90%;
+    }
+}
+
