@@ -114,7 +114,7 @@ header {
     font-size: 1.1rem;  
 }
 
-.sobre h2 {
+h1 {
     text-align: center;
 }
 
@@ -149,10 +149,10 @@ header {
 
 /* Ícones do carrossel */
 .carrossel-icones {
-    margin-top: 20px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 100px;
 }
 
 .carrossel-icones .icone {
@@ -164,8 +164,8 @@ header {
 }
 
 .carrossel-icones .icone img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 .carrossel-icones .icone.ativo img {
