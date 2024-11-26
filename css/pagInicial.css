@@ -177,32 +177,42 @@ h1 {
     transform: scale(1.1);
 }
 
+.icone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+}
+
+.icone-texto {
+    font-size: 0.9rem; 
+    color: #333; 
+    text-align: center; 
+}
+
+
 
 /*responsividade*/
 
 /* Responsividade para telas médias (tablets) */
 @media (max-width: 1024px) {
-    /* Ajusta a largura do conteúdo principal */
+    
     .sobre, .carrossel-container {
         width: 90%;
     }
 
-    /* Reduz o tamanho do gap */
     .sobre {
         gap: 10px;
     }
 
-    /* Ajusta a fonte */
     .sobre p {
         font-size: 1rem;
     }
 
-    /* Diminui altura do carrossel */
     .carrossel {
         height: 300px;
     }
 
-    /* Ajusta o tamanho dos ícones do carrossel */
     .carrossel-icones .icone img {
         width: 40px;
         height: 40px;
@@ -211,47 +221,40 @@ h1 {
 
 /* Responsividade para telas pequenas (smartphones) */
 @media (max-width: 768px) {
-    /* Empilha os elementos na seção "sobre" */
+
     .sobre {
         flex-direction: column;
         gap: 20px;
         padding: 15px;
     }
 
-    /* Centraliza a imagem e o texto */
     .sobre img {
         max-width: 100%;
         margin: 0 auto;
     }
 
-    /* Ajusta as margens internas */
     .sobre p {
         margin: 10px;
         font-size: 0.9rem;
     }
 
-    /* Ajusta altura do carrossel */
     .carrossel {
         height: 250px;
     }
 
-    /* Diminui os ícones do carrossel */
     .carrossel-icones .icone img {
         width: 30px;
         height: 30px;
     }
 
-    /* Reduz os paddings e margens do header */
     header {
         padding: 10px 20px;
     }
 
-    /* Reduz o espaçamento entre os itens do menu */
     .menu {
         gap: 10px;
     }
 
-    /* Diminui o tamanho do botão de login */
     .login {
         padding: 6px 12px;
         font-size: 0.9rem;
@@ -260,23 +263,20 @@ h1 {
 
 /* Responsividade para telas muito pequenas (smartphones menores) */
 @media (max-width: 480px) {
-    /* Reduz a largura do conteúdo principal */
+
     .sobre, .carrossel-container {
         width: 95%;
     }
 
-    /* Ajusta o tamanho da fonte */
     .sobre p {
         font-size: 0.85rem;
     }
 
-    /* Reduz o tamanho do botão de login */
     .login {
         padding: 5px 10px;
         font-size: 0.8rem;
     }
 
-    /* Ajusta altura do carrossel */
     .carrossel {
         height: 200px;
     }
