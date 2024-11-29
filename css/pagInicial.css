@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Hind:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: "ABeeZee", sans-serif;
+}
+
 body {
     background-image: url(../img/background.png); /*Fonte: */
     background-size: cover; 
@@ -12,7 +18,8 @@ body {
 header {
     position: relative;
     padding: 50px 30px;
-    background-color: rgba(190, 227, 247, 0.6);
+    background: linear-gradient(to bottom, #61befa, #bee3f7);
+    /* background-color: rgba(190, 227, 247, 0.6); */
 }
 
 .menu {
@@ -23,6 +30,7 @@ header {
     gap: 20px;            
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 
@@ -44,10 +52,13 @@ header {
 
 .menu li a {
     text-decoration: none;
-    color: #007bff;
+    color: #2ea9f8;
     font-weight: bold;
     font-size: 1.3em;
     transition: color 0.3s ease;
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .menu li a:hover {
@@ -77,14 +88,18 @@ header {
     align-items: center;
     gap: 20px;
     font-size: 3em;
-    color: #013e5e;
+    text-shadow: 
+        0.5px 0.5px 0 #0269d9, 
+       -0.5px 0.5px 0 #0269d9, 
+        0.5px -0.5px 0 #0269d9, 
+       -0.5px -0.5px 0 #0269d9;
 }
 
 .menuHeader {
     display: flex;
     flex-direction: row; 
     align-items: center;   
-    gap: 20px;             
+    gap: 40px;             
 }
 
 
@@ -92,20 +107,18 @@ header {
 
 .sobre {
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 20px;
-    margin: 90px auto;
+    margin: 50px auto;
     padding: 20px;
     width: 80%;
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
-    color: #013e5e;
 }
 
 
 .sobre img {
-    flex: 1;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -114,27 +127,24 @@ header {
 
 
 .sobre p {
-    margin: 20px;
+    margin: 10px;
     text-align: justify;
     line-height: 1.6;
-    font-size: 1.1rem; 
-    color: #013e5e; 
+    font-size: 1.5em; 
 }
 
 
-.sobre h1 {
-    text-align: center;
-    color: #013e5e;
-}
-
-.titulo {
+.titulo1 {
     text-align: center;
     padding-top: 50px;
+    font-size: 2em; 
 }
 
 .apresentacao {
     background-color: rgba(190, 227, 247, 0.7);
     border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
 /*carrossel */
@@ -205,7 +215,6 @@ header {
 }
 
 .icone-texto {
-    color: #013e5e; 
     text-align: center; 
 }
 
