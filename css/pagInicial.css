@@ -2,6 +2,9 @@
 
 * {
     font-family: "ABeeZee", sans-serif;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 body {
